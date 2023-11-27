@@ -2,13 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <title>Dom Manipulation</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
   </head>
-  <body>
-    <div class="bg-black">
-      <h1>Dom Learning on Chai aur Code</h1>
+  <body class="bg-black">
+    <!-- document.textContent ke andar aapko saara ka saara text milta hai -->
+    <div>
+      <h1 id="title" class="heading">
+        Dom Learning on Chai aur Code
+        <span style="display: none; font-weight: 100"> test and text</span>
+      </h1>
       <p>Lorem ipsum dolor sit amet.</p>
+
+
+      <!-- document.querySelector() always gives first value if mutliple values are present 
+      
+      -->
+      <h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum vero
+        voluptas rem molestias ipsum ab doloribus ipsam iusto iste, cupiditate
+        similique impedit ipsa voluptatum minima eveniet aspernatur itaque
+        praesentium perspiciatis?
+      </h2>
+      <h2>lorem4</h2>
+      <h2>Lorem ipsum dolor sit amet consectetur.</h2>
     </div>
   </body>
 </html>
