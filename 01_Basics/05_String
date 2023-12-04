@@ -1,0 +1,52 @@
+//strings in JS
+//we dont use + sign fro concatenation of string and vriable values.instead we use String Interpolation(`${}`) .
+//strings can be written in single and double quotes.
+
+const name="Gaurav";
+const repoCount=33;
+//old way -not recommended
+console.log(name+repoCount);
+
+//new way using backticks
+console.log(`hello my name is gaurav and i aam also known by ${name} and ${repoCount}`);
+
+//decalration of string
+//two ways using string literal and new keyword
+const newProductName="keyskd";
+const oldProductName=new String("ksmc");
+//in js,String is an object in which data is kept in key value pair .In Js ,String is not an array .
+console.log(oldProductName[0]);
+console.log(oldProductName.__proto__);
+
+//typeOf() method is used in js to find the data type of any variable
+
+console.log(oldProductName.length);
+//but note our original string is not changed
+console.log(oldProductName.toUpperCase());
+console.log(oldProductName)
+console.log(oldProductName.charAt(3));
+console.log(oldProductName.indexOf('k'));
+const newString =oldProductName.slice(0,2);
+console.log(newString);
+//in slice method,we can also use -ve index 
+const newStr=oldProductName.slice(-3,-3);
+console.log(newStr);
+
+const newStringTrim="     Gaurav \n ";
+console.log(newStringTrim);
+
+//trim method trim all the spaces 
+//wroks onwhite spaces and \n 
+console.log(newStringTrim.trim());
+
+
+const url="https://www.youtube.com/watch?v=fozwNnFunlo&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=11";
+
+//it replaces the first character or string it gets in the url only.
+
+console.log(url.replace('=','GauravIsKing'));
+console.log(url);
+
+//includes check whether the subString is present in the String or not 
+console.log(url.includes("https"));
+console.log(url.split('='));
