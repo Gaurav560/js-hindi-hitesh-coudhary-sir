@@ -57,4 +57,21 @@ console.log(Math.ceil(randomVal));
 
 //floor rounds of to lower value
 console.log(Math.floor(randomVal));
-//console.log(Math.abs(randomVal));
+
+
+//Min and Max in an array
+console.log(Math.min(3,4,5,1,6,0));
+console.log(Math.max(3,4,5,1,6,0));
+
+//Math.random()->always gives the value between 0 and 1
+console.log(Math.random());
+console.log(Math.floor((Math.random()*10)+1));
+
+const min=1
+const max=6
+//suppose we have to find a formula with math.random like dice ,that whenver u try to find a number with math.random u always want to get between 1 and 6 both inclusive
+ const randValue=Math.floor((Math.random()*(max-min+1))+min);
+ console.log(`rand value is ${randValue}`)
+
+
+
