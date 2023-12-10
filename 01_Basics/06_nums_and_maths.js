@@ -24,3 +24,7 @@ console.log(typeof(newNumber))
 //toPrecision mein pele decimal ke left side aur jab left side mein khatm ho jaaye tab right side mein check hoti hai 
 console.log(newNumber.toPrecision(11));
 
+//toLocaleString()->if a number has amy zeros ,then for counting zeros and avoiding confusion, we use this method
+const hundreds=100000000;
+console.log(hundreds.toLocaleString('en-IN'));
+
