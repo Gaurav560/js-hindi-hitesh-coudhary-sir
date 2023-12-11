@@ -2,7 +2,7 @@
 //              nums
 
 //it is type castingfrom string to number
-const score=400.545343;
+const score=40;
 //console.log(score);
 
 
