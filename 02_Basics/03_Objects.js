@@ -44,5 +44,26 @@ const JsObj={
    // console.log(typeof JsObj.mySymbol);
     console.log(typeof JsObj[mySymbol]);
 
+//to freeze an object so that its values can't be changed
+//Object.freeze(JsObj);
+console.log(JsObj);
+
+
+//in js ,functions are treated normally just like variables and can be treated like variables.
+JsObj.greeting=function(){
+    console.log("Hello Js users");
+}
+JsObj.greetingTwo=function(){
+    console.log(`heelo ,i am using backticks and my name is ::${this.name}`);
+}
+
+
+//returns function(anonymous )->a reference of that object
+// console.log(JsObj.greeting);  
+// console.log(JsObj.greetingTwo); 
 
     
+//it returns the fn value
+JsObj.greeting();
+JsObj.greetingTwo();
+ 
