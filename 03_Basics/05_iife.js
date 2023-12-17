@@ -25,3 +25,4 @@
 //iife with passing parameters in arrow fn
 
 ((name)=>console.log(name))(`gaurav`);
+//js is single threaded .
