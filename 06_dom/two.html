@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM with Chai and Code</title>
+</head>
+<body style="background-color: #212121;color:#fff;">
+    <div class="parent">
+<div class="day">Monday</div>
+<div class="day">Tuesday</div>
+<div class="day">Wednesday</div>
+<div class="day">Thursday</div>
+
+
+    </div>
+  
+</body>
+<script>
+const parent=document.querySelector('.parent');
+       //console.log(parent); 
+       //.children returns you html collection
+       //console.log(parent.children);
+       //to get the actual html value we use .innerHTML
+       //console.log(parent.children[1].innerHTML);
+       for(let i=0;i<parent.children.length;i++){
+//console.log(parent.children[i].innerHTML);
+
+       }
+       parent.children[2].style.color="orange";
+
+       //getting firstElementChild
+       //console.log(parent.firstElementChild);
+      // console.log(parent.lastElementChild);
+       const firstCild=parent.querySelector('.day');
+       console.log(firstCild.nextElementSibling);
+       console.log(firstCild.parentElement);
+
+//
+console.log(parent.childNodes);
+
+
+</script>
+</html>
