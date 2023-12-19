@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code-How to Create an Element</title>
+
+</head>
+<body>
+    <!-- har ek element apne app mein hi node list hai  -->
+    
+</body>
+<script>
+    const div=document.createElement('div');
+    document.body.append(div);
+    console.log(div);
+    div.className="yoyo";
+    div.id=Math.floor(Math.random()*100+1);
+    div.setAttribute("title","myNameisTakamora");
+    div.style.backgroundColor="red";
+    div.style.padding="20px";
+    //innerHTML pehle us value ko leke aayega tab set karega.thus 2 trips or 1 round trip for setting the value in innerHTML
+    div.innerHTML="Chai Aur Code";
+
+    //2ND WAY OF INSERTING VALUE IN DIV
+   const addtext= document.createTextNode("CHai aur codeee");
+div.appendChild(addtext);
+
+</script>
+</html>
