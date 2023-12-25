@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur Code | DOM </title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+const li=document.createElement('li');
+li.innerHTML=`${langName}`;
+document.querySelector('.language').appendChild(li);
+    }
+    addLanguage('pytihn');
+
+
+    function addOptimizedLanguage(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptimizedLanguage("Java");
+
+
+    //edit the elements in dom
+    const firstElement=document.querySelector('li:nth-child(1)');
+    firstElement.innerHTML="Mojo";
+
+    const newLi=document.createElement('li');
+    newLi.textContent="Jarvis";
+    firstElement.replaceWith(newLi);
+    const fourthChild=document.querySelector('li:nth-child(4)');
+    fourthChild.outerHTML='<li>Jarrrr</li>';
+
+    //remove
+    const fifthElement=document.querySelector('li:nth-child(5)');
+    fifthElement.parentNode.removeChild(fifthElement);
+</script>
+</html>
